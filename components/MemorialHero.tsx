@@ -24,10 +24,10 @@ export default function MemorialHero() {
 
   return (
     <section className="relative bg-background pt-12 pb-24 md:pb-32 overflow-hidden">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col lg:flex-row items-center justify-between gap-12">
+      <div className="max-w-[1536px] mx-auto px-4 sm:px-6 lg:px-10">
+        <div className="flex flex-col lg:flex-row items-center lg:items-start justify-between gap-12 lg:gap-14">
           {/* Left Content */}
-          <div className="w-full lg:w-[52%] text-center lg:text-center order-2 lg:order-1">
+          <div className="w-full lg:w-[46%] text-center lg:text-center order-2 lg:order-1">
             <div className="flex flex-col items-center">
               <h2 className="text-xs md:text-sm font-sans tracking-[0.3em] text-memorial-gold uppercase mb-4">
                 THE MEMORIAL SERVICE OF
@@ -124,22 +124,22 @@ export default function MemorialHero() {
           </div>
 
           {/* Right Content - Real photographs from the memorial flyer */}
-          <div className="w-full lg:w-[48%] order-1 lg:order-2">
-            <div className="relative mx-auto w-full max-w-[540px]">
+          <div className="w-full lg:w-[56%] order-1 lg:order-2">
+            <div className="relative mx-auto w-full max-w-[560px] lg:max-w-[900px]">
               <div
-                className="absolute -inset-4 rounded-[2rem] bg-white/70 blur-2xl"
+                className="absolute -inset-6 rounded-[3rem] bg-gradient-to-br from-memorial-gold/25 via-white/70 to-navy-dark/10 blur-3xl"
                 aria-hidden="true"
               />
-              <div className="relative overflow-hidden rounded-[1.5rem] border border-memorial-gold/40 bg-white p-2 shadow-[0_25px_60px_-25px_rgba(11,35,64,0.5)] sm:p-3">
-                <div className="overflow-hidden rounded-[1.1rem]">
+              <div className="relative overflow-hidden rounded-[1.75rem] border border-memorial-gold/50 bg-white p-3 shadow-[0_35px_80px_-30px_rgba(11,35,64,0.55)] sm:p-5">
+                <div className="overflow-hidden rounded-[1.25rem] ring-1 ring-inset ring-memorial-gold/30 lg:aspect-[4/3]">
                   <Image
                     src="/images/buria.png"
                     alt="Memorial flyer showing Late Chief Samuel Eberechukwu Ugochukwu (Omeni) in his black uniform and beret, and Late Lolo Eunice Ugochukwu in her royal-blue outfit and headwrap"
                     width={1536}
                     height={1024}
-                    className="h-auto w-full object-contain"
+                    className="h-auto w-full object-contain lg:h-full lg:w-full lg:object-cover lg:object-center"
                     priority
-                    sizes="(max-width: 1024px) 92vw, 540px"
+                    sizes="(max-width: 1024px) 92vw, (max-width: 1536px) 56vw, 900px"
                   />
                 </div>
               </div>
